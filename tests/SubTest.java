@@ -269,7 +269,7 @@ public class SubTest {
         strings.remove( 1.0);
     }
 
-    @Test (expected = IndexOutOfBoundsException.class)
+    @Test
     public void removeIndexMethod1(){
         DoublyLinkedList<String> strings = new DoublyLinkedList<>();
         strings.add("a");
@@ -324,12 +324,6 @@ public class SubTest {
         strings.add("a");
         assertEquals(strings.size(),2);
         assertEquals( strings.remove(1),"a");
-        assertEquals(strings.size(),0);
-    }
-
-    @Test
-    public void x()
-    {
-        
+        assertEquals(strings.size(),1);
     }
 }
